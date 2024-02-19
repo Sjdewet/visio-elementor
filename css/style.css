@@ -107,9 +107,8 @@ body {
 }
 
 .visio-img1{
-  width: 500px;
+  width: 450px;
 }
-
 /* ........... */
 
 * {box-sizing:border-box}
@@ -226,7 +225,7 @@ body {
   justify-content: center;
 }
 
-#sm-block {
+#button-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
