@@ -21,31 +21,23 @@ body {
   align-items: center;
 }
 
-/* Section-1 */
 
 .section-1 {
   margin-top: 30px;
 }
 
-/* .carousel-image {
-  width: 70%;
-}
 
-.carousel-slide {
-  display: flex;
-  justify-content: center;
-} */
 
 .blue-banner {
   display: flex;
   background-color: #244AC2;
   color: white;
   font-size: 20px;
-  height: 90px;
+  height: 85px;
   width: 38%;
   position: absolute;
   left: 35px;
-  top: 42%;
+  top: 46%;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -57,40 +49,13 @@ body {
 
 .black-banner {
   background-color: black;
-  height: 90px;
+  height: 85px;
   width: 38%;
   position: absolute;
   right: 35px;
-  top: 42%;
+  top: 46%;
   z-index: -1;
 }
-/* 
-.right-arrow {
-  position: absolute;
-  background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-next.svg);
-  top: 43%;
-  right: 209px;
-  background-size: contain;
-  cursor: pointer;
-  height: 90px;
-  width: 77px;
-}
-
-.dots-container {
-  position: absolute;
-  right: 245px;
-}
-
-.dot {
-  background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-dots.svg);
-  width: 22px;
-  height: 22px;
-  display: inline-block;
-  margin: 0 1px;
-} */
-
-/*------------2 */
-
 .section2work {
   display: flex;
   justify-content: center;
@@ -109,23 +74,21 @@ body {
 .visio-img1{
   width: 450px;
 }
-/* ........... */
+/* .................. */
 
 * {box-sizing:border-box}
 
-/* Slideshow container */
+/* Slideshow/carasoul container */
 .slideshow-container {
   max-width: 70%;
   position: relative;
   margin: auto;
 }
 
-/* Make the images invisible by default */
 .Containers {
   display: none;
 }
 
-/* forward & Back buttons */
 .Back, .forward {
   cursor: pointer;
   position: absolute;
@@ -141,18 +104,16 @@ body {
   user-select: none;
 }
 
-/* Place the "forward button" to the right */
 .forward {
   right: 0;
   border-radius: 4px 0 0 4px;
 }
 
-/*when the user hovers,add a black background with some little opacity */
 .Back:hover, .forward:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption Info */
+
 .info {
   color: #e3e3e3;
   font-size: 16px;
@@ -172,25 +133,8 @@ body {
   top: 0;
 }
 
-/* The circles or bullets indicators
-.dots {
-  cursor: pointer;
-  height: 16px;
-  width: 16px;
-  margin: 0 3px;
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 0.3;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.5s ease;
-}
 
-.enable, .dots:hover {
-  background: linear-gradient(92.18deg, #a049e9 -25.78%, #6643db 123.02%);
-  opacity: 1;
-} */
-
-/* Faint animation */
+/* animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.4s;
@@ -261,20 +205,21 @@ h3 {
 }
 
 
-.text {
-  margin: 0;
-  font-size: 9.6px;
-}
 
-.arrow {
+
+.visio-arrow1 {
   margin: 0;
   padding: 0;
 }
 
-.arrow1 {
+.visio-arrow2 {
   margin-left: 33px;
 }
 
+.text {
+    margin: 0;
+    font-size: 9.6px;
+  }
 
 /* responsiveness code*/
 
@@ -286,17 +231,7 @@ h3 {
     width: 70%;
     position: static;
 }
-.right-arrow {
-  position: absolute;
-  display: none;
-  background-image: url(https://visiofund.co.za/wp-content/themes/visio/images/slider-next.svg);
-  top: 385px;
-  right: 209px;
-  background-size: contain;
-  cursor: pointer;
-  height: 90px;
-  width: 77px;
-}
+
 
 .blue-banner{
   display: flex;
