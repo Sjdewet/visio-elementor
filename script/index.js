@@ -1,62 +1,33 @@
-// $(document).ready(function () {
-//     let currentSlide = 0;
-//     const slides = $('.carousel-slide');
-//     let dots = $('.dot');
-    
-//     function showSlide(index) {
-//         currentSlide = (index + slides.length) % slides.length;
-//         slides.removeClass('active');
-//         slides.eq(currentSlide).addClass('active');
-//         dots.removeClass('dot-active');
-//         dots.eq(currentSlide).addClass('dot-active');
-//     }
-    
-//     function changeSlide(offset) {
-//         showSlide(currentSlide + offset);
-//     }
-    
-//     $('.right-arrow').on('click', function () {
-//         changeSlide(1);
-//     });
-    
-//     $('.dots-container').on('click', '.dot', function () {
-//         const dotIndex = $(this).index();
-//         showSlide(dotIndex);
-//     });
-    
-//     for (let i = 0; i < slides.length; i++) {
-//         $('.dots-container').append('<div class="dot"></div>');
-//     }
-    
-//     dots = $('.dot');
-//     showSlide(currentSlide);
-// });
 
-var slidePosition = 1;
-SlideShow(slidePosition);
+$(document).ready(function () {
+    $('.slider-inner img:first-child').addClass('active').css('z-index', 10);
+    $('.dot:first-child').addClass('active');
+    
+    $('.next').on('click', function () {
+        nextSlide();
+    });
+    
+    $('.dot').on('click', function () {
+        var index = $(this).index();
+        $('.active').removeClass('active').css('z-index', -10);
+        $('.slider-inner img').eq(index).addClass('active').css('z-index', 10);
+        $('.dot.active').removeClass('active');
+        $(this).addClass('active');
+    });
+});
 
-// forward/Back controls
-function plusSlides(n) {
-  SlideShow(slidePosition += n);
+function nextSlide() {
+    var currentImg = $('.active');
+    var nextImg = currentImg.next();
+    if (nextImg.length) {
+        currentImg.removeClass('active').css('z-index', -10);
+        nextImg.addClass('active').css('z-index', 10);
+    } else {
+        $('.slider-inner img').removeClass('active').css('z-index', -10);
+        $('.slider-inner img:first-child').addClass('active').css('z-index', 10);
+    }
+    var currentIndex = $('.active').index('.slider-inner img');
+    $('.dot.active').removeClass('active');
+    $('.dot').eq(currentIndex).addClass('active');
 }
 
-//  images controls
-function currentSlide(n) {
-  SlideShow(slidePosition = n);
-}
-
-function SlideShow(n) {
-  var i;
-  var slides = document.getElementsByClassName("Containers");
-  var circles = document.getElementsByClassName("dots");
-  if (n > slides.length) {slidePosition = 1}
-  if (n < 1) {slidePosition = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-      circles[i].className = circles[i].className.replace(" enable", "");
-  }
-  slides[slidePosition-1].style.display = "block";
-  circles[slidePosition-1].className += " enable";
-} 
