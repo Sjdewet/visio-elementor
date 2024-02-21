@@ -427,6 +427,7 @@ section {
         height: 35px !important;
         width: 20px !important;
     }
+    
 }
 @media screen and (max-width: 520px) {
 
@@ -434,6 +435,7 @@ section {
         left: 75%;
         /* top: 70%; */
     }
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -696,6 +698,7 @@ section {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 880px) {
     .text-icons {
         display: flex;
@@ -714,9 +717,17 @@ section {
     .text-icons {
         display: flex;
         flex-direction: column;
-             padding: 0rem 0rem;
+             padding: 2rem 0rem;
              padding-left: 6rem;
              padding-right: 1rem;
+    }
+    .text {
+        width: 100%;
+        font-size: 22px;
+        line-height: 28px;
+        font-weight: 300;
+        color: #061C2C;
+        float: left;
     }
 }
 @media screen and (max-width: 864px) {
@@ -734,6 +745,11 @@ section {
     }
     .text {
         width: 100%;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 300;
+        color: #061C2C;
+        float: left;
     }
 }
 
@@ -772,7 +788,7 @@ section {
     .text-icons {
         display: flex;
         justify-content: space-evenly;
-        padding: 1rem 0;
+        padding: 2rem 0;
         padding-left :4rem !important;
     }
     .icons img {
@@ -828,6 +844,12 @@ section {
 
     .text {
         width: 100%;
+            display: block;
+            font-size: 19px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #061C2C;
+            float: left;
     }
 
     .icons img {
@@ -847,24 +869,33 @@ section {
         height: 4rem;
         padding: 3rem 0 0 0;
     }
+    .text {
+        width: 100%;
+            display: block;
+            font-size: 19px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #061C2C;
+            float: left;
+    }
 }
 
 @media screen and (max-width: 680px) {
     .text-icons {
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
     }
 }
 
 @media screen and (max-width: 667px) {
     .text-icons {
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
     }
 }
 
 @media screen and (max-width: 632px) {
 
     .text-icons {
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
         display: flex;
         flex-direction: column;
     }
@@ -872,6 +903,13 @@ section {
     .text {
         width: 100%;
         margin: auto;
+
+        display: block;
+        font-size: 19px;
+        line-height: 26px;
+        font-weight: 300;
+        color: #061C2C;
+        float: left;
     }
 
     .icons img {
@@ -884,6 +922,9 @@ section {
 }
 
 @media screen and (max-width: 626px) {
+    .text-icons {
+        padding: 2.5rem 3rem;
+    }
     .text {
         width: 100%;
     }
@@ -902,9 +943,13 @@ section {
     }
 
     .text {
-        font-size: large;
-        word-wrap: normal;
         width: 100%;
+            display: block;
+            font-size: 19px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #061C2C;
+            float: left;
     }
 
     .icons img {
